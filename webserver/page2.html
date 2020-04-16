@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Webserver</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,900|Ubuntu&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Kalam|Marck+Script&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="page2.css">
+</head>
+<body >
+	<nav class="navbar bg-dark navbar-expand-lg navbar-dark">
+		<a class="navbar-brand" href="">Webserver</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link main" href="../index.html"><strong><em>Main Page</a></em></strong>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link main" href="../webservice/page1.html"><strong><em>Webservice</a></em></strong>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link main" href="../corba/page1.html"><strong><em>CORBA</a></em></strong>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="page1.html">Page1 </a>
+				</li>
+				
+				<li class="nav-item">
+					<a class="nav-link" href="page3.html">Page3</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<div class="body">
+		<h1>Architecture</h1>
+		
+<p class="p">Web Server Architecture follows the following two approaches:<br>
+	&emsp;&emsp;&emsp;1. Concurrent Approach<br>
+	&emsp;&emsp;&emsp;2. Single-Process-Event-Driven Approach.
+</p>
+<h4 class="h4" style="font-style: italic; ">Concurrent Approach</h4>
+<p class="p">Concurrent approach allows the web server to handle multiple client requests at the same time. It
+can be achieved by following methods:
+&emsp;&emsp;&emsp;1.Multi-process<br>
+&emsp;&emsp;&emsp;2.Multi-threaded<br>
+&emsp;&emsp;&emsp;3.Hybrid method.
+</p>
+<h5>Multi-processing</h5>
+<p class="p">In this a single process parentprocess initiates several single-threaded child processes and distribute
+incoming requests to these child processes. Each of the child processes are responsible for
+handling single request.
+
+It is the responsibility of parent process to monitor the load and decide if processes should be
+killed or forked.</p>
+<!-- <img src="multiprocessing.jpg" width="900" height="200"> -->
+<h5>Multi-threaded</h5>
+<p>Unlike Multi-process, it creates multiple single-threaded process.</p>
+<h5>Hybrid Method</h5>
+<p class="p">It is combination of above two approaches. In this approach multiple process are created and each
+process initiates multiple threads. Each of the threads handles one connection. Using multiple
+threads in single process results in less load on system resources.</p>
+<h4>Single-Process-Event-Driven Approach.</h4>
+<p class="p">The single-process event-driven (SPED) architecture uses a single event-driven server process to perform concurrent processing of multiple HTTP requests. The server uses non-blocking systems calls to perform asynchronous I/O operations. An operation like the BSD UNIX select or the System V poll is used to check for I/O operations that have completed.</p>
+<img class="img" src="single.jpg" alt="process image" width="700">
+<hr noshade="">
+
+	</div>
+</body>
+<hr noshade="">
+<p style="text-align: center;"><strong>Page no - 2</strong></p>
+</html>

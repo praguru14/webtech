@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CORBA</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,900|Ubuntu&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="page1.css">
+</head>
+<body>
+	<nav class="navbar bg-dark navbar-expand-lg navbar-dark">
+		<a class="navbar-brand" href="">CORBA</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link main" href="../index.html"><strong><em>Main Page</a></em></strong>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link main" href="../webserver/page1.html"><strong><em>Webserver</a></em></strong>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link main" href="../webservice/page1.html"><strong><em>Webservice</a></em></strong>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="page1.html">Page1 </a>
+				</li>
+				
+				<li class="nav-item">
+					<a class="nav-link" href="page3.html">Page3</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+</body>
+<div class="body">
+	<h1>CORBA Version history</h1>
+	<p class="p">From its inception in October 1991 to till now there have been many versions of CORBA :- </p>
+	<img src="version.jpg" style="border-style: solid;">
+	<br><hr>
+	<h3>Incarnation in CORBA</h3>
+	<p class="p"> It is a process of associating a servent with a CORBA obj as to recieve requests.
+	This provides a serveant for Virtual form of CORBA Object. Lifetime of both servant abd objects are idependent.<br>
+	Incarnate using - activate_object().
+	<br>
+	but the reverse is also possible, create_reference() activates an object without incarnating a servant, and servant incarnation is later done on demand with a Servant Manager.
+	<hr>
+</p>
+</div>
+<hr>
+<p style="text-align: center;"><strong>Page no - 2</strong></p>
+</html>

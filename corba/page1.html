@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CORBA</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,900|Ubuntu&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="page1.css">
+</head>
+<body>
+	<nav class="navbar bg-dark navbar-expand-lg navbar-dark">
+		<a class="navbar-brand" href="">CORBA</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link main" href="../index.html"><strong><em>Main Page</a></em></strong>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link main" href="../webserver/page1.html"><strong><em>Webserver</a></em></strong>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link main" href="../webservice/page1.html"><strong><em>Webservice</a></em></strong>
+				</li>
+								<li class="nav-item">
+					<a class="nav-link" href="page2.html">Page2</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="page3.html">Page3</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<div class="body">
+		
+	<h1>Common Object Request Broker Architecture</h1>
+	<p class="p">CORBA enables communication between software written in different languages and running on different computers.It is a standard defined by the Object Management Group (OMG) designed to facilitate the communication of systems that are deployed on diverse platforms. CORBA enables collaboration between systems on different operating systems, programming languages, and computing hardware. CORBA uses an object-oriented model although the systems that use the CORBA do not have to be object-oriented.</p>
+	<p class="p">CORBA uses an interface definition language (IDL) to specify the interfaces that objects present to the outer world. CORBA then specifies a mapping from IDL to a specific implementation language like C++ or Java.</p>
+
+	<img  class="img" src="corba.jpg" style="float: left" width="140">
+	<p class="p">Some IDL mappings are more difficult to use than others. For example, due to the nature of Java, the IDL-Java mapping is rather straightforward and makes usage of CORBA very simple in a Java application. This is also true of the IDL to Python mapping. The C++ mapping requires the programmer to learn datatypes that predate the C++ Standard Template Library (STL)</p>
+	<p class="p"> By contrast, the C++11 mapping is easier to use, but requires heavy use of the STL. Since the C language is not object-oriented, the IDL to C mapping requires a C programmer to manually emulate object-oriented features.</p>
+
+	</div>
+</body>
+<hr>
+<p style="text-align: center;"><strong>Page no - 1</strong></p>
+</html>

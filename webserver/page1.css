@@ -1,0 +1,47 @@
+
+.p{
+	font-family: 'Satisfy', cursive;
+}
+body{
+	background-color: #42ffb0;
+	background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%)
+	/*background-image: url("bg.jpg");*/
+}
+
+.body{
+
+	padding-left: 30px;
+	padding-top: 10px;
+	padding-right: 100px;
+}
+.p{
+	font-family: 'Satisfy', cursive;
+}
+h1{
+	font-style: italic;
+	color: #231903;
+	font-family: cursive;
+/*	padding-left: 30px;
+	padding-top: 10px;*/
+}
+h5{
+
+	background-color: lightblue;
+	color: red;
+	border: dashed;
+	text-align: center;
+
+	width: 900px;
+	margin-left: 150px;
+}
+hr{
+	border-color: #f2a365;
+}
+p{
+	font-family: "Monserrat";
+	font-weight: initial;
+	font-size: 1.2rem;
+	padding-left: 30px;
+	padding-top: 10px;
+	padding-right: 100px;
+}
